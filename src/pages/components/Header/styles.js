@@ -13,12 +13,17 @@ export const Container = styled.div`
 
   background: #1ab4ff;
 
-  h4 {
+  h1 {
     font-weight: bold;
     border-right: 3px solid #fff;
     padding: 0.2em 0.7em;
     width: 10%;
     height: 10px;
+    font-size: 18pt;
+  }
+
+  img {
+    max-width: 50px;
   }
 `;
 

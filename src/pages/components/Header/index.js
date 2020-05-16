@@ -3,6 +3,7 @@ import { GoSearch } from 'react-icons/go';
 import { IoIosMenu } from 'react-icons/io';
 
 import { Container, Pesquisa, Menu } from './styles';
+import logo from '../../../assets/img/mb.png';
 
 function Header() {
   const [search, setSearch] = useState(false);
@@ -28,7 +29,7 @@ function Header() {
           </ul>
         </nav>
       </Menu>
-      <h1>Livraria MB</h1>
+      <img src={logo} alt="MB" />
       <Pesquisa search={search}>
         <button onClick={handleToggleVisible}>
           <GoSearch size={23} color="white" />

@@ -1,9 +1,12 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  max-height: 50px;
-  height: 100%;
+
+  z-index: 1;
   color: #fff;
+  max-height: 50px;
+  max-width: 100vw;
+  height:100%;
   width: 100%;
   position: fixed;
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
@@ -28,10 +31,12 @@ export const Container = styled.div`
 
 export const Pesquisa = styled.div`
   margin-right: 2%;
-  display:flex;
+
+  display: flex;
+
   input {
-  
-    width: 90%;
+    max-width: 200px;
+    width: 100%;
     height: 50%;
     color: #333;
     border: 0;

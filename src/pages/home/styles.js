@@ -11,13 +11,12 @@ export const Container = styled.div`
   margin-top: 15%;
   @media(min-width: 450px){
     grid-template-columns:40% 40%;
-  } 
+  }
 `;
 
 export const ComboBox = styled.div`
   width: 100%;
   height: 100%;
-  background: black;
   border-radius: 2px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -29,15 +28,14 @@ export const ComboBox = styled.div`
     text-align: center;
     strong {
       font-weight: bold;
-      font-size: 8pt;
+      font-size: 12pt;
       color: #333;
-      display: flex;
     }
   }
   img {
     padding-top: 15px;
     width: 100%;
-    height: 100%;
+    height: 90%;
     background: #ccc;
   }
 
@@ -46,9 +44,11 @@ export const ComboBox = styled.div`
     background: none;
     font-weight: bold;
     padding: 3px;
-    position:relative;
+    position:absolute;
     border-radius: 5%;
     color: #fff;
+    bottom:0;
+    right: 0;
 
     &:hover {
       border: 2px solid #fff;

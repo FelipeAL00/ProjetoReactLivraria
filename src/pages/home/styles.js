@@ -35,7 +35,7 @@ export const ComboBox = styled.div`
   img {
     padding-top: 15px;
     width: 100%;
-    height: 90%;
+    height: 100%;
     background: #ccc;
   }
 
@@ -47,7 +47,7 @@ export const ComboBox = styled.div`
     position:absolute;
     border-radius: 5%;
     color: #fff;
-    bottom:0;
+    bottom: -10%;
     right: 0;
 
     &:hover {

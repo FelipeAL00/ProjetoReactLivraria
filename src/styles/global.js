@@ -4,24 +4,23 @@ export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
   *{
-   margin:0;
-   padding:0;
-   outline:0;
-   box-sizing:border-box;
- }
- *:focus {
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+  }
+  *:focus {
     outline:0;
   }
 
   html, body, #root {
     height: 100%;
   }
-body {
+  body {
     max-width: 360px;
     max-height: 640px;
     -webkit-font-smoothing: antialiased !important;
     -webkit-image-smoothing: antialiased !important;
-
   }
 
   body , input , button {
@@ -35,7 +34,6 @@ body {
 
   ul {
     list-style: none;
-
   }
 
 `;

@@ -3,7 +3,7 @@ import { GoSearch } from 'react-icons/go';
 import { IoIosMenu } from 'react-icons/io';
 
 import { Container, Pesquisa, Menu, Image } from './styles';
-import logo from '../../../assets/img/mb.png';
+import logo from '../../assets/img/mb.png';
 
 function Header() {
   const [search, setSearch] = useState(false);

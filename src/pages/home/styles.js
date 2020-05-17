@@ -4,19 +4,20 @@ export const Container = styled.div`
   min-height: 100vh;
   width: 80%;
   display: grid;
-  grid-template-columns: 40% 40%;
-  grid-auto-rows: 200px;
-  grid-gap: 10%;
+  grid-template-columns:50%;
+  grid-gap: 5%;
   justify-content: space-evenly;
   margin-left: 10%;
   margin-top: 15%;
+  @media(min-width: 450px){
+    grid-template-columns:40% 40%;
+  } 
 `;
 
 export const ComboBox = styled.div`
-  max-width: 120px;
   width: 100%;
   height: 100%;
-  background: #ddd;
+  background: black;
   border-radius: 2px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -45,10 +46,8 @@ export const ComboBox = styled.div`
     background: none;
     font-weight: bold;
     padding: 3px;
-    position: absolute;
-    bottom: -12%;
-    left: 35%;
-    border-radius: 2px;
+    position:relative;
+    border-radius: 5%;
     color: #fff;
 
     &:hover {

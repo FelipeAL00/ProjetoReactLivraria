@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GoSearch } from 'react-icons/go';
 import { IoIosMenu } from 'react-icons/io';
 
-import { Container, Pesquisa, Menu } from './styles';
+import { Container, Pesquisa, Menu, Image } from './styles';
 import logo from '../../../assets/img/mb.png';
 
 function Header() {
@@ -20,19 +20,23 @@ function Header() {
   return (
     <Container>
       <Menu optionsOn={optionsOn}>
+        <nav>
+          <ul>
+            <li>TESTE</li>
+            <li>TESTE</li>
+            <li>TESTE</li>
+          </ul>
+        </nav>
         <button onClick={handleMenu}>
           <IoIosMenu size={23} />
         </button>
-        <nav>
-          <ul>
-            <li>Teste</li>
-          </ul>
-        </nav>
       </Menu>
-      <img src={logo} alt="MB" />
+      <Image search={search}>
+        <img src={logo} alt="MB" />
+      </Image>
       <Pesquisa search={search}>
         <button onClick={handleToggleVisible}>
-          <GoSearch size={23} color="white" />
+          <GoSearch size={20} color="white" />
         </button>
         <input placeholder="Pesquisar" id="menuPesquisa" />
       </Pesquisa>

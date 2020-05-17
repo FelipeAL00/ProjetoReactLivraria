@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   color: #fff;
@@ -28,21 +28,35 @@ export const Container = styled.div`
 `;
 
 export const Pesquisa = styled.div`
+  margin-right: 2%;
+  display: block;
+
   input {
-    max-width: 25%;
+    max-width: 100px;
+    width: 100%;
     height: 50%;
     color: #333;
-    border: 1px solid #dcdce6;
-    border-radius: 4px;
+    border: 0;
+    border-radius: 2px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     display: ${(props) => (props.search ? 'block' : 'none')};
+
+    text-align: center;
+
+    ${(props) =>
+      props.search &&
+      css`
+        margin-left: 35px;
+        margin-top: 0;
+      `}
   }
 
   button {
-    display: ${(props) => (props.search ? 'none' : 'block')};
     background: none;
     border: 0;
+    display: block;
     cursor: pointer;
+    position: relative;
   }
 `;
 
@@ -58,14 +72,28 @@ export const Menu = styled.div`
 
     color: ${(props) => (props.optionsOn ? '#000' : '#fff')};
   }
+
   nav {
     background: #fff;
     color: #000;
     position: absolute;
     height: 300px;
     width: 300px;
-    top: 50%;
-    left: 0;
+    top: 25%;
+    left: 2%;
     display: ${(props) => (props.optionsOn ? 'block' : 'none')};
+
+    ul {
+      margin-top: 8%;
+
+      li {
+        padding: 10px;
+        border-top: 2px solid #000;
+      }
+    }
   }
+`;
+
+export const Image = styled.div`
+  display: ${(props) => (props.search ? 'none' : 'block')};
 `;

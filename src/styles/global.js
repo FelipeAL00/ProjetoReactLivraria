@@ -17,8 +17,6 @@ export default createGlobalStyle`
     height: 100%;
   }
 body {
-    max-width: 360px;
-    max-height: 640px;
     -webkit-font-smoothing: antialiased !important;
     -webkit-image-smoothing: antialiased !important;
 

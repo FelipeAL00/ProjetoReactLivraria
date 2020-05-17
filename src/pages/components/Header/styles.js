@@ -1,16 +1,15 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  color: #fff;
   max-height: 50px;
-  max-width: 360px;
+  height: 100%;
+  color: #fff;
   width: 100%;
   position: fixed;
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   background: #1ab4ff;
 
   h1 {
@@ -23,17 +22,16 @@ export const Container = styled.div`
   }
 
   img {
-    max-width: 50px;
+    width: 3.5em;
   }
 `;
 
 export const Pesquisa = styled.div`
   margin-right: 2%;
-  display: block;
-
+  display:flex;
   input {
-    max-width: 100px;
-    width: 100%;
+  
+    width: 90%;
     height: 50%;
     color: #333;
     border: 0;
@@ -41,13 +39,11 @@ export const Pesquisa = styled.div`
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     display: ${(props) => (props.search ? 'block' : 'none')};
 
-    text-align: center;
+
 
     ${(props) =>
       props.search &&
       css`
-        margin-left: 35px;
-        margin-top: 0;
       `}
   }
 
@@ -70,25 +66,22 @@ export const Menu = styled.div`
     display: block;
     position: relative;
 
-    color: ${(props) => (props.optionsOn ? '#000' : '#fff')};
+    color: ${(props) => (props.optionsOn ? 'white' : '#fff')};
   }
 
   nav {
-    background: #fff;
     color: #000;
     position: absolute;
-    height: 300px;
-    width: 300px;
-    top: 25%;
     left: 2%;
     display: ${(props) => (props.optionsOn ? 'block' : 'none')};
-
+    background: #1F264B;
+    border-radius: 5%;
     ul {
-      margin-top: 8%;
-
+      margin-top: 18%;
       li {
         padding: 10px;
-        border-top: 2px solid #000;
+        color: white;
+        font-size:10pt;
       }
     }
   }

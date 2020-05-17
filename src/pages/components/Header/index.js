@@ -22,13 +22,13 @@ function Header() {
       <Menu optionsOn={optionsOn}>
         <nav>
           <ul>
-            <li>TESTE</li>
-            <li>TESTE</li>
-            <li>TESTE</li>
+            <li>Gênero</li>
+            <li>Publicar</li>
+            <li>Ajuda</li>
           </ul>
         </nav>
         <button onClick={handleMenu}>
-          <IoIosMenu size={23} />
+          <IoIosMenu size={25} />
         </button>
       </Menu>
       <Image search={search}>

@@ -2,19 +2,29 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   min-height: 100vh;
-  width: 80%;
+  width: 90%;
   display: grid;
-  grid-template-columns:50%;
+  grid-template-columns: 50%;
   grid-gap: 5%;
   justify-content: space-evenly;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 15%;
-  @media(min-width: 450px){
-    grid-template-columns:40% 40%;
+
+  @media (min-width: 800px) {
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 18%;
+    grid-gap: 0;
+  }
+
+  @media (min-width: 450px) {
+    grid-template-columns: 40% 40%;
   }
 `;
 
 export const ComboBox = styled.div`
+  max-height: 250px;
+  max-width: 250px;
   width: 100%;
   height: 100%;
   border-radius: 2px;
@@ -35,24 +45,26 @@ export const ComboBox = styled.div`
   img {
     padding-top: 15px;
     width: 100%;
+    max-height: 250px;
     height: 100%;
     background: #ccc;
   }
 
   button {
     border: 2px solid #1ab4ff;
-    background: none;
+    background: #fff;
     font-weight: bold;
     padding: 3px;
-    position:absolute;
-    border-radius: 5%;
-    color: #fff;
+    position: absolute;
+    border-radius: 2px;
+    color: #1ab4ff;
     bottom: -10%;
     right: 0;
 
     &:hover {
       border: 2px solid #fff;
       background: #1ab4ff;
+      color: #fff;
     }
   }
 `;

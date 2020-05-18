@@ -82,7 +82,7 @@ export const Menu = styled.div`
     background: #1F264B;
     border-radius: 5%;
     ul {
-      margin-top: 18%;
+      margin-top: 30%;
       li {
         padding: 10px;
         color: white;

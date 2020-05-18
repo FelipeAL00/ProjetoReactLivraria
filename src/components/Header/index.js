@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <Container>
-      <Menu optionsOn={optionsOn}>
+      <Menu optionsOn={optionsOn} id="menuBox">
         <nav>
           <ul>
             <li>Gênero</li>
@@ -27,18 +27,18 @@ function Header() {
             <li>Ajuda</li>
           </ul>
         </nav>
-        <button onClick={handleMenu}>
+        <button onClick={handleMenu} id="btnMenu">
           <IoIosMenu size={25} />
         </button>
       </Menu>
       <Image search={search}>
         <img src={logo} alt="MB" />
       </Image>
-      <Pesquisa search={search}>
-        <button onClick={handleToggleVisible}>
+      <Pesquisa search={search} id="pesquisaBox">
+        <button onClick={handleToggleVisible} id="btnPesquisar">
           <GoSearch size={20} color="white" />
         </button>
-        <input placeholder="Pesquisar" id="menuPesquisa" />
+        <input placeholder="Pesquisar" id="inputPesquisa" />
       </Pesquisa>
     </Container>
   );

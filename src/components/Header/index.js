@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GoSearch } from 'react-icons/go';
 import { IoIosMenu } from 'react-icons/io';
+import {Link} from 'react-router-dom';
 
 import { Container, Pesquisa, Menu, Image } from './styles';
 import logo from '../../assets/img/mb.png';
@@ -22,9 +23,15 @@ function Header() {
       <Menu optionsOn={optionsOn}>
         <nav>
           <ul>
-            <li>Gênero</li>
-            <li>Publicar</li>
-            <li>Ajuda</li>
+            <Link to = "/genero">
+              <li>Gênero</li>
+            </Link>
+            <Link to = "/publicar">  
+              <li>Publicar</li>
+            </Link>
+            <Link to = "/ajuda">
+              <li>Ajuda</li>
+            </Link>
           </ul>
         </nav>
         <button onClick={handleMenu}>

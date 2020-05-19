@@ -14,7 +14,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   background: #1ab4ff;
-
+  
   h1 {
     font-weight: bold;
     border-right: 3px solid #fff;
@@ -31,25 +31,23 @@ export const Container = styled.div`
 
 export const Pesquisa = styled.div`
   margin-right: 2%;
-
   display: flex;
-
   input {
     max-width: 200px;
     width: 100%;
     height: 50%;
     color: #333;
     border: 0;
-    border-radius: 2px;
+    border-radius: 1%;
+    padding-left : 3%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     display: ${(props) => (props.search ? 'block' : 'none')};
-
-
-
     ${(props) =>
       props.search &&
       css`
+
       `}
+
   }
 
   button {
@@ -73,7 +71,6 @@ export const Menu = styled.div`
 
     color: ${(props) => (props.optionsOn ? 'white' : '#fff')};
   }
-
   nav {
     color: #000;
     position: absolute;
@@ -81,12 +78,20 @@ export const Menu = styled.div`
     display: ${(props) => (props.optionsOn ? 'block' : 'none')};
     background: #1F264B;
     border-radius: 5%;
+    padding-top:5%;
+    @media(min-width: 550px ){
+      padding-top:2%;
+      width:10%;
+    }
     ul {
-      margin-top: 18%;
       li {
         padding: 10px;
         color: white;
         font-size:10pt;
+      }
+      li:hover,:active{
+        background:#1E90FF;  
+        border-radius: 5%;
       }
     }
   }
@@ -94,4 +99,7 @@ export const Menu = styled.div`
 
 export const Image = styled.div`
   display: ${(props) => (props.search ? 'none' : 'block')};
+  @media(min-width: 450px){
+    display: ${(props) => (props.search ? 'block' : 'block')};
+  }
 `;

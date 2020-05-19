@@ -17,8 +17,8 @@ function Cart() {
         <ComboBox>
           <div>
             <img src={lib} alt="Julio Verne - Viagem ao Centro da Terra" />
-            <strong>Julio Verne - Viagem ao Centro da terra</strong>
-            <label>R$ 45,00</label>
+              <strong>Julio Verne - Viagem ao Centro da terra</strong>
+              <label>R$ 45,00</label>
           </div>
         </ComboBox>
 

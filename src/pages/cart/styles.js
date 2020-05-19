@@ -61,7 +61,7 @@ export const Container = styled.div`
 export const ComboBox = styled.nav`
   width: 90%;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
+  border-radius: 2%;
   margin-left: 10%;
   margin-top: 8%;
   border-bottom: 3px solid #1ab4ff;

@@ -30,9 +30,21 @@ function Header() {
                 <FiShoppingCart size={15} />
               </li>
             </Link>
-            <li>Gênero</li>
-            <li>Publicar</li>
-            <li>Ajuda</li>
+            <Link to = "/genero">
+              <li>
+                <strong>Gênero</strong>
+              </li>
+            </Link>
+            <Link to = "/publicar">  
+              <li>
+                <strong>Home</strong>
+              </li>
+            </Link>
+            <Link to = "ajuda">
+              <li>
+                <strong>Ajuda</strong>
+              </li>
+            </Link>
           </ul>
         </nav>
         <button onClick={handleMenu} id="btnMenu">

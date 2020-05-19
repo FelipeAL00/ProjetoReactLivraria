@@ -72,12 +72,12 @@ export const Menu = styled.div`
     color: #000;
     position: absolute;
     left: 2%;
-    width: 150px;
+    width: 25%;
     display: ${(props) => (props.optionsOn ? 'block' : 'none')};
     background: #1f264b;
-    border-radius: 5%;
+    border-radius: 2%;
     ul {
-      margin-top: 18%;
+      margin-top: 25%;
       li {
         padding: 10px;
         color: white;
@@ -87,10 +87,19 @@ export const Menu = styled.div`
         justify-content: space-evenly;
         strong {
           font-weight: bold;
-          font-size: 12pt;
+          font-size: 9pt;
         }
       }
+      li:hover, :active{
+        border-radius:5%;
+        background:	#1E90FF;
+      }
     }
+  }
+  @media(min-width: 650px){
+        nav{
+          width:15%;
+        }
   }
 `;
 

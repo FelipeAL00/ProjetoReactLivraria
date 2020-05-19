@@ -7,6 +7,7 @@ export const Container = styled.div`
   min-height: 100vh;
 
   a {
+    background: #dde;
     transition: all 0.2s;
 
     &:hover {
@@ -97,11 +98,12 @@ export const Badge = styled.div`
     background: #1ab4ff;
     width: 150px;
     font-size: 16pt;
+    font-weight: bold;
     padding: 6px;
     border-radius: 4px;
     color: #fff;
     transition: all 0.2s;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 
     &:hover {
       color: #000;

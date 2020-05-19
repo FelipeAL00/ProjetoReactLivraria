@@ -35,7 +35,7 @@ function Header() {
                 <strong>Gênero</strong>
               </li>
             </Link>
-            <Link to = "/publicar">  
+            <Link to = "/publicar">
               <li>
                 <strong>Home</strong>
               </li>
@@ -57,10 +57,10 @@ function Header() {
         </Image>
       </Link>
       <Pesquisa search={search} id="pesquisaBox">
+        <input placeholder="Pesquisar" id="inputPesquisa" />
         <button onClick={handleToggleVisible} id="btnPesquisar">
           <GoSearch size={20} color="white" />
         </button>
-        <input placeholder="Pesquisar" id="inputPesquisa" />
       </Pesquisa>
     </Container>
   );

@@ -30,18 +30,35 @@ export const Container = styled.div`
 
 export const Pesquisa = styled.div`
   margin-right: 2%;
+  max-width: 200px;
+  width: ${(props) => (props.search ? '100%' : '0')};
+  height: ${(props) => (props.search ? '50%' : '0')};
 
-  display: flex;
-
-  input {
-    max-width: 200px;
+  @media (min-width: 800px) {
     width: 100%;
     height: 50%;
-    color: #333;
+    background: ${(props) => (props.search ? '#333' : 'none')};
+    box-shadow: ${(props) =>
+      props.search ? '2px 2px 2px rgba(0, 0, 0, 0.3)' : 'none'};
+
+    button {
+      right: 3%;
+    }
+  }
+
+  display: flex;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  background: #333;
+  border-radius: 5px;
+
+  input {
+    width: 80%;
+    height: 100%;
+    color: #fff;
     border: 0;
-    border-radius: 2px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     display: ${(props) => (props.search ? 'block' : 'none')};
+    background: none;
+    margin-left: 5%;
 
     ${(props) => props.search && css``}
   }
@@ -51,7 +68,11 @@ export const Pesquisa = styled.div`
     border: 0;
     display: block;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    @media (max-width: 450px) {
+      right: 5%;
+    }
+    top: 32%;
   }
 `;
 
@@ -90,19 +111,27 @@ export const Menu = styled.div`
           font-size: 9pt;
         }
       }
-      li:hover, :active{
-        border-radius:5%;
-        background:	#1E90FF;
+      li:hover,
+      :active {
+        border-radius: 5%;
+        background: #1e90ff;
       }
     }
   }
-  @media(min-width: 650px){
-        nav{
-          width:15%;
-        }
+  @media (min-width: 650px) {
+    nav {
+      width: 15%;
+    }
   }
 `;
 
 export const Image = styled.div`
+  @media (min-width: 800px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-left: 5%;
+  }
   display: ${(props) => (props.search ? 'none' : 'block')};
 `;

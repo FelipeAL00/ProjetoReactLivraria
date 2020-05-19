@@ -4,6 +4,7 @@ export const Container = styled.div`
   margin-top: 10%;
   background: none;
   padding: 0;
+  min-height:100vh;
 
   a {
     transition: all 0.2s;

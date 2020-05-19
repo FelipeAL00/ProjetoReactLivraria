@@ -5,7 +5,7 @@ import { GoPlus } from 'react-icons/go';
 import { Container } from './styles';
 import lib from '../../assets/img/lib.jpg';
 
-function library() {
+function Library() {
   return (
     <Container>
       <img src={lib} alt="Julio Verne - Viagem ao Centro da Terra" />
@@ -17,7 +17,7 @@ function library() {
             Otto Lidenbrock, pelo sobrinho Axel e pelo guia Hans Bjelke.
             Acredita-se que a história tenha sido inspirada em uma viagem que o
             próprio Verne teria feito para a Noruega e para outros países
-            escandinavos. <Link to="/history">...Ver Mais</Link>
+            escandinavos. <Link to="/description">...Ver Mais</Link>
           </h3>
         </div>
       </div>
@@ -34,4 +34,4 @@ function library() {
   );
 }
 
-export default library;
+export default Library;

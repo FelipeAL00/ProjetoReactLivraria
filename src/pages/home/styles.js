@@ -24,12 +24,11 @@ export const Container = styled.div`
 
 export const ComboBox = styled.div`
   max-height: 250px;
-  max-width: 250px;
+  max-width: 80px;
   width: 100%;
-  height: 100%;
   border-radius: 2px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  position: relative;
+  position: abs;
   margin-top: 15%;
 
   div {

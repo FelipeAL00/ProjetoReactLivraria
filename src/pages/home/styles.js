@@ -40,7 +40,7 @@ export const ComboBox = styled.div`
   @media(min-width:650px){
     img{
       transform: scale(1);
-      transition: transform 0.6s;
+      transition: transform 0.8s;
     }
     img:hover{
       transform: scale(1.3);

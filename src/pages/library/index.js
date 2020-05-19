@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { GoPlus } from 'react-icons/go';
 
-import { Container } from './styles';
+import { Container, Badge } from './styles';
 import lib from '../../assets/img/lib.jpg';
 
 function Library() {
@@ -21,7 +21,9 @@ function Library() {
           </h3>
         </div>
       </div>
-
+      <Badge>
+        <button>R$ 50,00</button>
+      </Badge>
       <Link to="/cart">
         <footer>
           <h5>Adicionar ao Carrinho</h5>

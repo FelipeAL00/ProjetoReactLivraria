@@ -24,46 +24,51 @@ export const Container = styled.div`
 
 export const ComboBox = styled.div`
   max-height: 250px;
-  max-width: 80px;
+  max-width: 150px;
   width: 100%;
-  border-radius: 2px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  position: abs;
+  position: relative;
   margin-top: 15%;
+  border-radius: 4px;
 
   div {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 3px;
     width: 100%;
-    background: #ccc;
+    background: #333;
     text-align: center;
     strong {
       font-weight: bold;
       font-size: 12pt;
-      color: #333;
+      color: #fff;
     }
   }
   img {
-    padding-top: 15px;
+    max-width: 150px;
     width: 100%;
     max-height: 250px;
     height: 100%;
-    background: #ccc;
+    background: #333;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
 
   button {
-    border: 2px solid #1ab4ff;
-    background: #fff;
+    border: 2px solid #fff;
+    background: #1ab4ff;
     font-weight: bold;
     padding: 3px;
     position: absolute;
     border-radius: 2px;
-    color: #1ab4ff;
-    bottom: -10%;
+    color: #fff;
     right: 0;
+    bottom:0;
 
     &:hover {
-      border: 2px solid #fff;
-      background: #1ab4ff;
-      color: #fff;
+      border: 2px solid #000;
+      background: #fff;
+      color: #000;
     }
   }
 `;

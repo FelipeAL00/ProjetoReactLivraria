@@ -4,7 +4,7 @@ export const Container = styled.div`
   margin-top: 10%;
   background: none;
   padding: 0;
-  min-height:100vh;
+  min-height: 100vh;
 
   a {
     transition: all 0.2s;
@@ -19,7 +19,7 @@ export const Container = styled.div`
       max-height: 50px;
       height: 100%;
       bottom: 0;
-      position: absolute;
+      position: fixed;
       width: 100%;
       display: flex;
       align-items: center;
@@ -82,6 +82,31 @@ export const Container = styled.div`
         color: #888;
         font-weight: bold;
       }
+    }
+  }
+`;
+
+export const Badge = styled.div`
+  position: absolute;
+  width: 100%;
+
+  button {
+    right: 0;
+    position: absolute;
+    border: 0;
+    background: #1ab4ff;
+    width: 150px;
+    font-size: 16pt;
+    padding: 6px;
+    border-radius: 4px;
+    color: #fff;
+    transition: all 0.2s;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+
+    &:hover {
+      color: #000;
+      background: #fff;
+      border: 2px solid #1ab4ff;
     }
   }
 `;

@@ -1,12 +1,11 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-
   z-index: 1;
   color: #fff;
   max-height: 50px;
   max-width: 100vw;
-  height:100%;
+  height: 100%;
   width: 100%;
   position: fixed;
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
@@ -44,12 +43,7 @@ export const Pesquisa = styled.div`
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     display: ${(props) => (props.search ? 'block' : 'none')};
 
-
-
-    ${(props) =>
-      props.search &&
-      css`
-      `}
+    ${(props) => props.search && css``}
   }
 
   button {
@@ -78,15 +72,23 @@ export const Menu = styled.div`
     color: #000;
     position: absolute;
     left: 2%;
+    width: 150px;
     display: ${(props) => (props.optionsOn ? 'block' : 'none')};
-    background: #1F264B;
+    background: #1f264b;
     border-radius: 5%;
     ul {
-      margin-top: 30%;
+      margin-top: 18%;
       li {
         padding: 10px;
         color: white;
-        font-size:10pt;
+        border-top: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        strong {
+          font-weight: bold;
+          font-size: 12pt;
+        }
       }
     }
   }

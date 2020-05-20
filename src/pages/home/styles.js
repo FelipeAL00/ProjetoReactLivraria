@@ -1,17 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  min-height: 100vh;
-  width: 80%;
   display: grid;
-  grid-template-columns:50%;
   grid-gap: 5%;
-  justify-content: space-evenly;
-  margin-left: 10%;
+  grid-auto-rows: 300px;
   margin-top: 15%;
-
   @media(min-width: 450px){
-    grid-template-columns:25% 25% 25%;
+    grid-template-columns:30% 30% 30%;
   } 
 `;
 
@@ -23,17 +18,20 @@ export const ComboBox = styled.div`
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   position: relative;
   margin-top: 15%;
+  margin-right: auto;
   margin-left: auto;
-  margin-right:auto;
+
 
   div {
-    width: 100%;
-    background: #ccc;
-    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #333;
+    padding: 3px;
+
     strong {
       font-weight: bold;
       font-size: 7pt;
-      color: #363636;
+      color: white;
       display: flex;
     }
   }
@@ -45,6 +43,7 @@ export const ComboBox = styled.div`
   img {
     width: 100%;
     height: 100%;
+
     background: #ccc;
     
   }
@@ -59,15 +58,22 @@ export const ComboBox = styled.div`
   }
 
   button {
-    border: 2px solid #1ab4ff;
-    background: none;
+    border: 0;
+    background: #0797F1;
     font-weight: bold;
+    position:absolute;
+    right:0;
+    bottom:0;
     padding: 2%;
     border-radius: 5%;
-    color: #fff;
+    color: whitesmoke;
+    z-index: 2;
+
     &:hover {
-      border: 2px solid #fff;
-      background: #1ab4ff;
+      border: 2px solid #000;
+      background: whitesmoke;
+      color: #0797F1;
+      border: 0;
     }
   }
 `;

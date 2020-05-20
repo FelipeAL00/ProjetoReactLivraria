@@ -6,7 +6,7 @@ export const Container = styled.div`
   padding: 0;
   min-height: 100vh;
 
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     margin-top: 0;
   }
   a {
@@ -56,7 +56,7 @@ export const Container = styled.div`
     border-bottom: 5px solid #1ab4ff;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 
-    @media (min-width: 800px) {
+    @media (min-width: 700px) {
       height: 50%;
       width: 50%;
     }
@@ -67,9 +67,9 @@ export const Container = styled.div`
     text-align: center;
     padding-bottom: 5px;
     margin-left: 5%;
+    margin-top: 2%;
 
     @media (min-width: 800px) {
-      margin-top: 2%;
       width: 50%;
       margin-left: 25%;
     }
@@ -130,7 +130,7 @@ export const Media = styled.nav`
   display: flex;
   justify-content: center;
   width: 100vw;
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     background: #333;
     max-height: 300px;
     height: 50%;
@@ -139,4 +139,5 @@ export const Media = styled.nav`
     }
     border-bottom: 5px solid #1ab4ff;
   }
+
 `;

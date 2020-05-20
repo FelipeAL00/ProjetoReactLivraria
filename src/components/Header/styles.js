@@ -86,6 +86,9 @@ export const Menu = styled.div`
     display: block;
     position: relative;
 
+    @media (min-width: 800px) {
+      display: none;
+    }
     color: ${(props) => (props.optionsOn ? 'white' : '#fff')};
   }
 
@@ -121,6 +124,33 @@ export const Menu = styled.div`
   @media (min-width: 650px) {
     nav {
       width: 15%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    nav {
+      display: flex;
+      align-items: center;
+      background: none;
+      top: 0;
+      margin-left: 5%;
+      ul {
+        margin-top: 8%;
+        display: flex;
+
+        li {
+          justify-content: space-between;
+          border: 0;
+          strong{
+            margin-right: 14px;
+          }
+        }
+        li:hover,
+        :active {
+          border-radius: 5%;
+          background: #333;
+        }
+      }
     }
   }
 `;

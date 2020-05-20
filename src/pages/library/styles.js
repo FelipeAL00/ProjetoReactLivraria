@@ -6,6 +6,9 @@ export const Container = styled.div`
   padding: 0;
   min-height: 100vh;
 
+  @media (min-width: 800px) {
+    margin-top: 0;
+  }
   a {
     background: #dde;
     transition: all 0.2s;
@@ -46,13 +49,17 @@ export const Container = styled.div`
   }
 
   img {
-    padding-top: 15px;
     width: 100%;
     max-height: 300px;
     height: 100%;
     background: none;
     border-bottom: 5px solid #1ab4ff;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: 800px) {
+      height: 50%;
+      width: 50%;
+    }
   }
 
   div {
@@ -60,6 +67,12 @@ export const Container = styled.div`
     text-align: center;
     padding-bottom: 5px;
     margin-left: 5%;
+
+    @media (min-width: 800px) {
+      margin-top: 2%;
+      width: 50%;
+      margin-left: 25%;
+    }
 
     strong {
       font-weight: bold;
@@ -110,5 +123,20 @@ export const Badge = styled.div`
       background: #fff;
       border: 2px solid #1ab4ff;
     }
+  }
+`;
+
+export const Media = styled.nav`
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  @media (min-width: 800px) {
+    background: #333;
+    max-height: 300px;
+    height: 50%;
+    img {
+      box-shadow: none;
+    }
+    border-bottom: 5px solid #1ab4ff;
   }
 `;

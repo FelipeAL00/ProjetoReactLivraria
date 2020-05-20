@@ -26,7 +26,7 @@ function Header() {
       <Menu optionsOn={optionsOn} id="menuBox">
         <nav>
           <ul>
-            <Link to="/">
+            <Link to="/" onClick={handleMenu}>
               <li>
                 <strong>Home</strong>
                 <FaHome size={15} />
@@ -38,7 +38,7 @@ function Header() {
                 <FiShoppingCart size={15} />
               </li>
             </Link>
-            <Link to="/genero">
+            <Link to="/genero" onClick={handleMenu}>
               <li>
                 <strong>Gênero</strong>
                 <FaBookOpen size={15} />
@@ -53,7 +53,7 @@ function Header() {
                 </nav>
               </li>
             </Link>
-            <Link to="ajuda">
+            <Link to="/ajuda" onClick={handleMenu}>
               <li>
                 <strong>Ajuda</strong>
                 <MdHelp size={15} />

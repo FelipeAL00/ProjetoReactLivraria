@@ -2,13 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { GoPlus } from 'react-icons/go';
 
-import { Container, Badge } from './styles';
+import { Container, Badge, Media } from './styles';
 import lib from '../../assets/img/lib.jpg';
 
 function Library() {
   return (
     <Container>
-      <img src={lib} alt="Julio Verne - Viagem ao Centro da Terra" />
+      <Media>
+        <img src={lib} alt="Julio Verne - Viagem ao Centro da Terra" />
+      </Media>
       <div>
         <strong>Julio Verne - Viagem ao Centro da Terra</strong>
         <div>

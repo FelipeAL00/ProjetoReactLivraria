@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { GoSearch } from 'react-icons/go';
 import { IoIosMenu } from 'react-icons/io';
 import { FiShoppingCart } from 'react-icons/fi';
+import { FaBookOpen, FaHome } from 'react-icons/fa';
+import { MdHelp } from 'react-icons/md';
 
 import { Container, Pesquisa, Menu, Image } from './styles';
 import logo from '../../assets/img/mb.png';
@@ -24,25 +26,37 @@ function Header() {
       <Menu optionsOn={optionsOn} id="menuBox">
         <nav>
           <ul>
+            <Link to="/">
+              <li>
+                <strong>Home</strong>
+                <FaHome size={15} />
+              </li>
+            </Link>
             <Link to="/cart" onClick={handleMenu}>
               <li>
                 <strong>Carrinho</strong>
                 <FiShoppingCart size={15} />
               </li>
             </Link>
-            <Link to = "/genero">
+            <Link to="/genero">
               <li>
                 <strong>Gênero</strong>
+                <FaBookOpen size={15} />
+                <nav>
+                  <ul>
+                    <li>Romance</li>
+                    <li>Aventura</li>
+                    <li>Ação</li>
+                    <li>Ficção</li>
+                    <li>Outros</li>
+                  </ul>
+                </nav>
               </li>
             </Link>
-            <Link to = "/publicar">
-              <li>
-                <strong>Home</strong>
-              </li>
-            </Link>
-            <Link to = "ajuda">
+            <Link to="ajuda">
               <li>
                 <strong>Ajuda</strong>
+                <MdHelp size={15} />
               </li>
             </Link>
           </ul>

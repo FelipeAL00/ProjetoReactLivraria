@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: grid;
   grid-gap: 5%;
+  grid-auto-rows: 300px;
   margin-top: 15%;
   @media (min-width: 550px) {
     grid-template-columns: 30% 30% 30%;
-
+    margin-top: 8%;
   }
 `;
 
@@ -15,15 +16,18 @@ export const ComboBox = styled.div`
   position: relative;
   margin-top: 5%;
   border-radius: 2%;
-  width:55%;
-  height:80%;
-  margin-right:auto;
-  margin-left:auto;
+  width: 55%;
+  height: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+  text-align: center;
 
   div {
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     background: #333;
+    padding: 3px;
     strong {
       font-weight: bold;
       font-size: 10pt;
@@ -34,15 +38,15 @@ export const ComboBox = styled.div`
     width: 100%;
     height: 100%;
     background: #333;
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
-  @media(min-width:650px){
-    img{
+  @media (min-width: 650px) {
+    img {
       transform: scale(1);
       transition: transform 0.8s;
     }
-    img:hover{
+    img:hover {
       transform: scale(1.3);
     }
   }
@@ -56,8 +60,8 @@ export const ComboBox = styled.div`
     border-radius: 2px;
     color: #fff;
     right: 0;
-    bottom:0;
-    z-index:2;
+    bottom: 0;
+    z-index: 2;
 
     &:hover {
       border: 2px solid #000;

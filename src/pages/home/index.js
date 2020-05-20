@@ -44,6 +44,24 @@ function Home() {
           <img src={lib2} alt="Julio Verne - Viagem ao Centro da Terra" />
         </Link>
       </ComboBox>
+      <ComboBox>
+        <div>
+          <strong>Julio Verne - Viagem ao Centro da terra</strong>
+        </div>
+        <Link to="/lib">
+          <button>Ver Mais</button>
+          <img src={lib} alt="Julio Verne - Viagem ao Centro da Terra" />
+        </Link>
+      </ComboBox>
+      <ComboBox>
+        <div>
+          <strong>Box Harry Potter - Coleção Completa</strong>
+        </div>
+        <Link to="/lib">
+          <button>Ver Mais</button>
+          <img src={lib2} alt="Julio Verne - Viagem ao Centro da Terra" />
+        </Link>
+      </ComboBox>
     </Container>
   );
 }

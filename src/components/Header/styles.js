@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { darken } from 'polished';
 
 export const Container = styled.div`
   z-index: 1;
@@ -113,6 +114,9 @@ export const Menu = styled.div`
           font-weight: bold;
           font-size: 9pt;
         }
+        nav {
+          display: none;
+        }
       }
       li:hover,
       :active {
@@ -141,14 +145,54 @@ export const Menu = styled.div`
         li {
           justify-content: space-between;
           border: 0;
-          strong{
+          strong {
             margin-right: 14px;
+          }
+
+          nav {
+            display: none;
           }
         }
         li:hover,
-        :active {
+        li:active {
           border-radius: 5%;
           background: #333;
+
+          nav {
+            display: grid;
+            position: absolute;
+            margin-top: 35%;
+            margin-left: 60%;
+            background: #333;
+            max-width: 200px;
+            width: 100%;
+            ul {
+              margin-top:0;
+              padding: 10px;
+              z-index: 1;
+              display: block;
+              li {
+              }
+              li + li {
+                border-top: 1px solid #fff;
+              }
+              li:hover,li:active{
+                color: ${darken(0.4, '#fff')};
+              }
+            }
+
+            &::before {
+              content: '';
+              position: absolute;
+              left: calc(50% - 20px);
+              top: -20px;
+              width: 0;
+              height: 0;
+              border-left: 20px solid transparent;
+              border-right: 20px solid transparent;
+              border-bottom: 20px solid #333;
+            }
+          }
         }
       }
     }

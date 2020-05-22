@@ -61,11 +61,7 @@ export const Pesquisa = styled.div`
     border-radius: 1%;
     padding-left : 3%;
     display: ${(props) => (props.search ? 'block' : 'none')};
-    ${(props) =>
-      props.search &&
-      css`
-
-      `}
+    ${(props) => props.search && css``}
 
     display: ${(props) => (props.search ? 'block' : 'none')};
     background: none;
@@ -108,17 +104,17 @@ export const Menu = styled.div`
     left: 2%;
     width: 25%;
     display: ${(props) => (props.optionsOn ? 'block' : 'none')};
-    background: #1F264B;
+    background: #1f264b;
     border-radius: 5%;
-    padding-top:5%;
-    @media(min-width: 550px ){
+    padding-top: 5%;
+    @media (min-width: 550px) {
       padding-top: 1%;
-      width:10%;
+      width: 10%;
     }
 
     ul {
       border-radius: 2%;
-      margin-top: 25%;
+      margin-top: 15%;
       li {
         padding: 5%;
         color: white;
@@ -177,13 +173,13 @@ export const Menu = styled.div`
           nav {
             display: grid;
             position: absolute;
-            margin-top: 35%;
-            margin-left: 60%;
+            margin-top: 30%;
+            left: calc(95% - 100px);
             background: #333;
             max-width: 200px;
             width: 100%;
             ul {
-              margin-top:0;
+              margin-top: 0;
               padding: 10px;
               z-index: 1;
               display: block;
@@ -192,7 +188,8 @@ export const Menu = styled.div`
               li + li {
                 border-top: 1px solid #fff;
               }
-              li:hover,li:active{
+              li:hover,
+              li:active {
                 color: ${darken(0.4, '#fff')};
               }
             }
@@ -211,8 +208,9 @@ export const Menu = styled.div`
           }
         }
       }
-      li:hover,:active{
-        background:#1E90FF;
+      li:hover,
+      :active {
+        background: #1e90ff;
         border-radius: 5%;
       }
     }
@@ -228,7 +226,7 @@ export const Image = styled.div`
     margin-left: 5%;
   }
   display: ${(props) => (props.search ? 'none' : 'block')};
-  @media(min-width: 450px){
+  @media (min-width: 450px) {
     display: ${(props) => (props.search ? 'block' : 'block')};
   }
 `;

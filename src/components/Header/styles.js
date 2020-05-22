@@ -14,7 +14,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   background: #1ab4ff;
-  
+
   h1 {
     font-weight: bold;
     border-right: 3px solid #fff;
@@ -60,7 +60,6 @@ export const Pesquisa = styled.div`
     border: 0;
     border-radius: 1%;
     padding-left : 3%;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     display: ${(props) => (props.search ? 'block' : 'none')};
     ${(props) =>
       props.search &&
@@ -113,7 +112,7 @@ export const Menu = styled.div`
     border-radius: 5%;
     padding-top:5%;
     @media(min-width: 550px ){
-      padding-top:2%;
+      padding-top: 1%;
       width:10%;
     }
 
@@ -156,7 +155,7 @@ export const Menu = styled.div`
       top: 0;
       margin-left: 5%;
       ul {
-        margin-top: auto;
+        margin-top: 0;
         display: flex;
 
         li {
@@ -213,7 +212,7 @@ export const Menu = styled.div`
         }
       }
       li:hover,:active{
-        background:#1E90FF;  
+        background:#1E90FF;
         border-radius: 5%;
       }
     }

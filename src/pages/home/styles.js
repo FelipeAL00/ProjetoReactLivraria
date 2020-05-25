@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-gap: 5%;
   grid-auto-rows: 300px;
 
   margin-top: 5%;
-  @media(min-width: 450px){
-    grid-template-columns:30% 30% 30%;
-  } 
-  margin-top: 15%;
+  @media (min-width: 450px) {
+    grid-gap: 5%;
+    grid-template-columns: 30% 30% 30%;
+  }
 `;
 
 export const ComboBox = styled.div`
@@ -19,7 +18,7 @@ export const ComboBox = styled.div`
   border-radius: 4px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   position: relative;
-  margin-top: 15%;
+  margin-bottom: 10%;
   margin-right: auto;
   margin-left: auto;
 

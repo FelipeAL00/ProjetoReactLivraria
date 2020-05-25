@@ -1,12 +1,15 @@
 import React from 'react';
 
 import { Container, ComboBox } from './styles';
+import Carrossel from '../../components/Carrossel/index';
 import lib from '../../assets/img/lib.jpg';
 import lib2 from '../../assets/img/harry.png';
 import { Link } from 'react-router-dom';
 
 function Home() {
   return (
+    <>
+    <Carrossel/>
     <Container>
       <ComboBox>
         <div>
@@ -63,6 +66,7 @@ function Home() {
         </Link>
       </ComboBox>
     </Container>
+    </>
   );
 }
 

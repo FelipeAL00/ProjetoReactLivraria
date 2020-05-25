@@ -4,14 +4,12 @@ export const Container = styled.div`
   display: grid;
   grid-gap: 5%;
   grid-auto-rows: 300px;
-  margin-top: 15%;
-  @media (min-width: 450px) {
-    grid-template-columns: 30% 30% 30%;
-  }
 
-  @media (min-width: 750px) {
-    margin-top: 5%;
-  }
+  margin-top: 5%;
+  @media(min-width: 450px){
+    grid-template-columns:30% 30% 30%;
+  } 
+  margin-top: 15%;
 `;
 
 export const ComboBox = styled.div`

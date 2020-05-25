@@ -116,7 +116,7 @@ export const Menu = styled.div`
       border-radius: 2%;
       margin-top: 15%;
       li {
-        padding: 5%;
+        padding: 10px;
         color: white;
         border-top: 1px solid #fff;
         display: flex;

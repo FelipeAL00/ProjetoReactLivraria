@@ -15,6 +15,7 @@ function Routes() {
       <Route path="/cart" component={Cart} />
       <Route path="/genero" component={NotFound} />
       <Route path="/ajuda" component={NotFound} />
+      <Route path="/description" component={NotFound} />
     </Switch>
   );
 }

@@ -68,11 +68,14 @@ export const ComboBox = styled.div`
     right: 0;
     bottom: 0;
     padding: 2%;
+    max-width: 100px;
+    width: 100%;
     border-radius: 5%;
     color: whitesmoke;
     z-index: 2;
     display: inline-block;
     white-space: nowrap;
+    text-align: center;
 
     &:hover {
       border: 2px solid #000;

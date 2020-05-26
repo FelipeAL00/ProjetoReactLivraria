@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 import { darken } from 'polished';
 
 export const Container = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap');
+  font-family: 'Balsamiq Sans', cursive;
   z-index: 1;
   color: #fff;
   max-height: 50px;
@@ -148,7 +150,7 @@ export const Menu = styled.div`
       display: flex;
       align-items: center;
       background: none;
-      top: 0;
+      top: -10%;
       margin-left: 5%;
       ul {
         margin-top: 0;
@@ -158,6 +160,7 @@ export const Menu = styled.div`
           justify-content: space-between;
           border: 0;
           strong {
+            font-size: 11pt;
             margin-right: 14px;
           }
 
@@ -173,8 +176,8 @@ export const Menu = styled.div`
           nav {
             display: grid;
             position: absolute;
-            margin-top: 30%;
-            left: calc(95% - 100px);
+            margin-top: 40%;
+            left: calc(100% - 70px);
             background: #333;
             max-width: 200px;
             width: 100%;

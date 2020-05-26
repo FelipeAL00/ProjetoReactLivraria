@@ -22,9 +22,13 @@ export const Carrossel = styled.div`
         padding-top:10%;
         width:40%;
     }
-    @media(min-width: 800px){
-        padding-top:10%;
-        width:30%;
+    @media(min-width: 700px){
+        width:100%;
+        padding-top:3%;
+    }
+    @media(min-width: 1200px){
+        width:100%;
+        padding-top:2%;
     }
     img {
       max-height: 200px;

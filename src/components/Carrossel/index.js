@@ -11,7 +11,7 @@ class DemoCarousel extends Component {
     render() {
         return (
             <Carrossel>
-                <Carousel width="100%" autoPlay transitionTime={2000} showStatus={false} infiniteLoop stopOnHover={false} showThumbs={false}>
+                <Carousel width="100%" autoPlay transitionTime={2000} showStatus={false} infiniteLoop stopOnHover={false} showThumbs={false} dynamicHeight>
                     <div>
                         <img src={img1} alt="gif" />
                     </div>

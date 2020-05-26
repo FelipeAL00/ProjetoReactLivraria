@@ -10,7 +10,12 @@ export const Carrossel = styled.div`
         color:#333;
         line-height:1.5em;
     }
-
-
- 
+    @media(min-width: 500px){
+        padding-top:10%;
+        width:40%;
+    }
+    @media(min-width: 800px){
+        padding-top:10%;
+        width:30%;
+    }
 `;

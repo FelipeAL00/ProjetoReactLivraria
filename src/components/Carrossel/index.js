@@ -11,7 +11,6 @@ class DemoCarousel extends Component {
     render() {
         return (
             <Carrossel>
-                <h1>Destaques</h1>
                 <Carousel>
                     <div>
                         <img src={img1} />
